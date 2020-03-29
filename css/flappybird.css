@@ -1,0 +1,106 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    user-select: none;
+}
+body{
+    border-top: 1px solid #ccc;
+}
+body,h1{
+    margin: 0;
+    padding: 0;
+}
+.bgI{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/flappybird/bg_day.png") no-repeat 0 0/30% 100%;
+    background-repeat: repeat-x;
+    filter: blur(6px)
+}
+.wrap{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 250px auto;
+    border: 1px solid rgb(68, 238, 238);
+    border-radius: 6px;
+}
+canvas{
+    background-color: #fff;
+    background: url("../images/flappybird/bg_day.png") no-repeat 0 0/30%;
+    background-repeat: repeat-x;
+    border-radius: 6px;
+}
+.mark{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 18px;
+    padding: 2px;
+    background-color: rgba(0,0,0,.6);
+    text-align: center;
+    line-height: 18px;
+    color: aqua;
+    border-radius: 6px;
+}
+.data{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 130px;
+}
+.data>.markWrap{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 50%;
+    padding-top: 1px;
+}
+.data h1{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: aqua;
+    text-align: center;
+    line-height: 20px;
+}
+.data .imgBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.active{
+    display: block;
+}
+.data .markWrap img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.data .btn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 20px;
+    /* background-color: rgb(87, 216, 233); */
+    border-radius: 4px;
+    margin: 10px auto 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.data .btn>img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+}
